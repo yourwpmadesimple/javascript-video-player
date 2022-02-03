@@ -45,6 +45,10 @@ const togglePlay = () => {
     playBtn.setAttribute("title", "Play");
   }
 };
+// Event Listeners
+// Event Listeners
+playBtn.addEventListener("click", togglePlay);
+video.addEventListener("click", togglePlay);
 ```
 
 ## Show Play Icon
