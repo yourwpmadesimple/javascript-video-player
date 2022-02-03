@@ -14,6 +14,14 @@ const currentTime = document.querySelector('.time-elapsed')
 const duration = document.querySelector('.time-duration')
 const fullscreenBtn = document.querySelector('.fullscreen')
 ```
+## Event Listeners
+```javascript
+// Event Listeners
+playBtn.addEventListener("click", togglePlay);
+video.addEventListener("click", togglePlay);
+video.addEventListener("timeupdate", updateProgress);
+video.addEventListener("canplay", updateProgress);
+```
 
 ## Toggle Play / Pause action
 ```javascript
@@ -70,9 +78,3 @@ video.addEventListener("timeupdate", updateProgress);
 video.addEventListener("canplay", updateProgress);
 ```
 
-## Event Listeners
-```javascript
-// Event Listeners
-playBtn.addEventListener("click", togglePlay);
-video.addEventListener("click", togglePlay);
-```
