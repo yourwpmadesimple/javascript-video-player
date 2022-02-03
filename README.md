@@ -14,3 +14,22 @@ const currentTime = document.querySelector('.time-elapsed')
 const duration = document.querySelector('.time-duration')
 const fullscreenBtn = document.querySelector('.fullscreen')
 ```
+
+## Toggle Play / Pause action
+```javascript
+// Play & Pause ----------------------------//
+const togglePlay = () => {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+};
+```
+
+## Event Listeners
+```javascript
+// Event Listeners
+playBtn.addEventListener("click", togglePlay);
+video.addEventListener("click", togglePlay);
+```
