@@ -82,3 +82,13 @@ video.addEventListener("timeupdate", updateProgress);
 video.addEventListener("canplay", updateProgress);
 ```
 
+## Seek within the video
+```javascript
+// Click to seek within the video
+const setProgress = (e) => {
+  const newTime = e.offsetX / progressRange.offsetWidth;
+  progressBar.style.width = `${newTime * 100}%`;
+  video.currentTime = newTime * video.duration;
+};
+```
+
