@@ -118,7 +118,6 @@ function openFullscreen(elem) {
     /* IE11 */
     elem.msRequestFullscreen();
   }
-  video.classList.add("video-fullscreen");
 }
 
 /* Close fullscreen */
@@ -132,7 +131,6 @@ function closeFullscreen() {
     /* IE11 */
     document.msExitFullscreen();
   }
-  video.classList.remove("video-fullscreen");
 }
 
 let fullscreen = false;
@@ -155,4 +153,3 @@ volumeRange.addEventListener("click", changeVolume);
 volumeIcon.addEventListener("click", toggleMute);
 speed.addEventListener("change", changeSpeed);
 fullscreenBtn.addEventListener("click", toggleFullscreen);
-video.addEventListener("dblclick", toggleFullscreen);
